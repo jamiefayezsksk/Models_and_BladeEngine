@@ -32,42 +32,17 @@
     text-align: right;
 }
 
-.text-gray-500 {
-    color: #6b7280;
+/* Make text color blue */
+.text-blue-500 {
+    color: #3b82f6; /* Tailwind's blue-500 color */
 }
 
-.dark\:text-gray-400 {
-    color: #9ca3af;
+.text-blue-400 {
+    color: #60a5fa; /* Tailwind's blue-400 color */
 }
 
-.w-1\/6 {
-    width: 16.666667%;
-}
-
-.py-3 {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-}
-
-.px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.uppercase {
-    text-transform: uppercase;
-}
-
-.font-semibold {
-    font-weight: 600;
-}
-
-.border {
-    border-width: 1px;
-}
-
-.border-gray-300 {
-    border-color: #d1d5db;
+.text-blue-600 {
+    color: #2563eb; /* Tailwind's blue-600 color */
 }
 
 .bg-white {
@@ -85,4 +60,76 @@
 
 .hover\:bg-gray-50:hover {
     background-color: #f9fafb;
+}
+
+/* New styles */
+.bg-dark-blue {
+    background-color: #1e3a8a; /* Dark blue color */
+}
+
+/* Header styles */
+.header {
+    background-color: #1f2937; /* Dark gray background (Tailwind's gray-800) */
+    color: #ffffff; /* White text color */
+    padding: 1rem; /* Padding around the header */
+    display: flex; /* Enable Flexbox layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.header h1 {
+    font-size: 1.5rem; /* Tailwind's text-2xl size */
+    color: #ffffff; /* White text color */
+    margin: 0; /* Remove default margin */
+}
+.text-black {
+    color: #000000; /* Black color */
+}
+
+.table-container {
+    display: flex;
+    justify-content: center; /* Center the table horizontally */
+    padding: 1rem; /* Add some padding around the table */
+}
+
+.books-table {
+    width: 100%;
+    max-width: 1200px; /* Limit the maximum width of the table */
+    border-collapse: collapse; /* Ensure the borders are collapsed */
+}
+
+.column-header {
+    padding: 0.75rem 1rem; /* Add padding for header cells */
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1px solid #d1d5db; /* Border color for header cells */
+    color: #ffffff; /* Set header text color to white */
+    text-align: center; /* Center the text within header cells */
+}
+
+.column-header-container {
+    background-color: #1e3a8a; /* Dark blue background color for the header */
+}
+
+.book-row {
+    background-color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+.book-row:hover {
+    background-color: #f9fafb; /* Change background on hover */
+}
+
+.book-cell {
+    padding: 0.75rem 1rem; /* Add padding for table cells */
+    border: 1px solid #d1d5db; /* Border color for table cells */
+    color: #000000; /* Set cell text color to black */
+    text-align: center; /* Center the text within table cells */
+}
+
+/* Additional styles for responsive design */
+@media (max-width: 768px) {
+    .books-table {
+        font-size: 0.875rem; /* Reduce font size on smaller screens */
+    }
 }
