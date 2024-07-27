@@ -1,0 +1,88 @@
+/* @import statements should be at the top */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Your custom styles */
+.relative {
+    position: relative;
+}
+
+.overflow-x-auto {
+    overflow-x: auto;
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sm\:rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.rtl\:text-right {
+    text-align: right;
+}
+
+.text-gray-500 {
+    color: #6b7280;
+}
+
+.dark\:text-gray-400 {
+    color: #9ca3af;
+}
+
+.w-1\/6 {
+    width: 16.666667%;
+}
+
+.py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.border {
+    border-width: 1px;
+}
+
+.border-gray-300 {
+    border-color: #d1d5db;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.divide-y {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.divide-gray-300 > * + * {
+    border-color: #d1d5db;
+}
+
+.hover\:bg-gray-50:hover {
+    background-color: #f9fafb;
+}

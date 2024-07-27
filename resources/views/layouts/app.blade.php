@@ -6,11 +6,13 @@
     <title>Books List</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body class="bg-gray-100">
+<body>
     @include('partials.header')
-    <div class="container mx-auto mt-8">
+    
+    <main class="container mx-auto px-4 py-8">
         @yield('content')
-    </div>
+    </main>
+    
     @include('partials.footer')
 </body>
 </html>

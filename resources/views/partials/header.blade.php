@@ -1,3 +1,3 @@
-<header class="bg-blue-200 p-4 text-blue">
-    <h1 class="text-xl">Book List</h1>
+<header class="bg-gray-800 text-blue py-4">
+    <h1 class="text-2xl">Book List</h1>
 </header>
